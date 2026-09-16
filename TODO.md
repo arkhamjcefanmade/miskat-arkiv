@@ -16,6 +16,9 @@ Idées et chantiers pas encore planifiés. Rien d'urgent ici.
       pour Circus Ex Mortis). À appliquer à : Matière Noire, Fondations
       Cyclopéennes, Alice au Pays des Merveilles, Au Coeur des Ténèbres, Les
       Disparus de Killineq.
+- [ ] **Iconographie « Dossiers d'Arkham Vol X »** : ajouter une iconographie
+      dédiée pour identifier les scénarios issus des différents volumes
+      « Dossiers d'Arkham ».
 
 ## Contenu
 
@@ -23,6 +26,14 @@ Idées et chantiers pas encore planifiés. Rien d'urgent ici.
       des planches et images (MBPrint, Shoggoth Card Printing, etc.), format A4
       vs format carte, papier, fond perdu, recto/verso. Plan de travail détaillé
       (MBPrint en priorité, puis MPC) : [plan_impression_facilitee.md](plan_impression_facilitee.md).
+- [ ] **Investiguer MPC Project Helper** : voir si l'outil permet de faciliter
+      la préparation/commande d'impression du contenu du catalogue (à
+      rapprocher du plan d'impression facilitée ci-dessus).
+- [ ] **Investigateurs parallèles** : ajouter les investigateurs parallèles au
+      catalogue.
+- [ ] **Cartes Tabou du chapitre 1** : ajouter les cartes Tabou du chapitre 1.
+- [ ] **Torrent** : ajouter un torrent pour héberger le contenu — se souvenir
+      de la proposition de Tokeeto sur le Discord d'héberger du contenu.
 - [ ] **Section « Divers » par cycle** proposant en téléchargement à part :
       les séparateurs (intercalaires) et le guide au format cycle complet
       (non découpé par scénario) — ce dernier contient les crédits et
