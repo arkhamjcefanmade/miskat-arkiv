@@ -198,7 +198,7 @@
     {
       "id": "les-chiens-de-tindalos",
       "titre": "Les Chiens de Tindalos",
-      "titreVO": "Hounds of Tindalos",
+      "titreVO": null,
       "type": "scenario",
       "cycle": "Cycle 2",
       "etat": "disponible",
@@ -214,7 +214,7 @@
         "bleed": false
       },
       "contactPanierPartage": "Vinnquest",
-      "commentaire": null,
+      "commentaire": "Création originale FR.",
       "archive": {
         "id": "ahlcg-fr-les-chiens-de-tindalos",
         "guide": "ahlcg-fr-les-chiens-de-tindalos-guide.pdf",
@@ -223,8 +223,7 @@
       },
       "datePublication": "2021-03",
       "sortKey": "Chiens de Tindalos",
-      "creator": "StonePenguin",
-      "traducteur": "Mitch"
+      "creator": "Pilunte"
     },
     {
       "id": "circus-ex-mortis",
