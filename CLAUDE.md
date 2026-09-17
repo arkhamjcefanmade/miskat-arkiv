@@ -41,10 +41,10 @@ descriptions) :
   indépendant), De profundis (mini-campagne de 2 scénarios).
 - **Cycle 9** : campagne fan-made de 8 scénarios, *Alice au pays des merveilles*.
 - **Cycle 10** : campagne fan-made de 8 scénarios, *Les Ombres de Yog-Sothoth*.
-- **Cycle 11 — Les Dossiers d'Arkham 5** : deux extensions fan-made d'une
-  campagne officielle — Renouveau des Dévoreurs de rêves, Quête onirique
-  étendue (extension des Dévoreurs de rêves). Nombre de scénarios difficile à
-  dénombrer car elles s'appuient sur des scénarios existants.
+- **Cycle 11 — Les Dossiers d'Arkham 5** : trois extensions fan-made de
+  campagnes officielles — Renouveau Dévoreurs des Rêves, Renouveau
+  Conspiration d'Innsmouth, et Quête onirique étendue (extension de Renouveau
+  Dévoreurs des Rêves).
 - **Cycle 12 — Les Dossiers d'Arkham 6** : contient pour l'instant un scénario
   fan-made, *Noël à Arkham*. Sera complété par *Métro 2033* (en cours de
   relecture).
