@@ -625,7 +625,7 @@
       "etat": "disponible",
       "langue": "fr",
       "publie": true,
-      "image": "img/thumbs/lappel-du-porte-peste.jpg",
+      "image": "img/thumbs/lappel-du-porte-peste.png",
       "liens": {
         "source": "https://discord.com/channels/443151671846109195/837579876701438002",
         "fichier": null
@@ -1267,7 +1267,7 @@
       "etat": "disponible",
       "langue": "fr",
       "publie": true,
-      "image": "img/thumbs/la-cite-des-secrets.jpg",
+      "image": "img/thumbs/la-cite-des-secrets.png",
       "liens": {
         "source": null,
         "fichier": null
