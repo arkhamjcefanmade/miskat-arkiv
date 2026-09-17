@@ -586,31 +586,6 @@
       "creator": ""
     },
     {
-      "id": "investigateurs-paralleles-ffg",
-      "titre": "Investigateurs Parallèles FFG",
-      "titreVO": null,
-      "type": "investigateurs",
-      "cycle": null,
-      "etat": "inconnu",
-      "langue": "fr",
-      "publie": false,
-      "image": "img/thumbs/investigateurs-paralleles-ffg.jpg",
-      "liens": {
-        "source": null,
-        "fichier": null
-      },
-      "images": {
-        "noBleed": false,
-        "bleed": false
-      },
-      "contactPanierPartage": null,
-      "commentaire": null,
-      "creator": "Fantasy Flight Games",
-      "archive": null,
-      "datePublication": null,
-      "sortKey": "Investigateurs Parallèles FFG"
-    },
-    {
       "id": "jouet-dune-illusion",
       "titre": "Jouet d'une Illusion",
       "titreVO": "The Nephew Calls",
@@ -1278,7 +1253,7 @@
     },
     {
       "id": "investigateurs-paralleles",
-      "titre": "Investigateurs Parallèles",
+      "titre": "Investigateurs Parallèles FFG",
       "titreVO": null,
       "type": "investigateurs",
       "cycle": null,
@@ -1303,7 +1278,7 @@
         "images": "ahlcg-fr-investigateurs-paralleles-cartes-avec-bleed.zip"
       },
       "datePublication": null,
-      "sortKey": "Investigateurs Parallèles"
+      "sortKey": "Investigateurs Parallèles FFG"
     }
   ]
 }
