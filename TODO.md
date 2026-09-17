@@ -10,6 +10,21 @@ Idées et chantiers pas encore planifiés. Rien d'urgent ici.
 - [ ] **Iconographie « Dossiers d'Arkham Vol X »** : ajouter une iconographie
       dédiée pour identifier les scénarios issus des différents volumes
       « Dossiers d'Arkham ».
+- [ ] **Cadrage des thumbnails sans exception au cas par cas** : `object-fit:
+      cover` seul laisse le navigateur centrer le recadrage, ce qui coupe le
+      haut des illustrations sur certaines fiches (d'où l'exception
+      `object-position: top` codée en dur pour Pulsions Cynégétiques et Noël à
+      Arkham dans index.html). Passer `object-position: top` en global casse à
+      l'inverse les thumbnails qui sont des couvertures de guide complètes
+      (bandeau logo en haut, illustration au milieu — cas d'Alice au Pays des
+      Merveilles et Matière Noire) : le bandeau se retrouve affiché à la place
+      de l'image. Deux pistes à trancher : (a) imposer un format thumb
+      systématique — toujours un simple recadrage paysage de l'illustration
+      seule, sans bandeau/texte (comme fait pour Circus Ex Mortis), ce qui
+      permettrait `object-position: top` partout sans exception ; ou (b)
+      ajouter un paramètre par fiche dans catalogue.json (ex. `imageAlign:
+      "top" | "center" | "bottom"`) pour piloter `object-position` sans coder
+      les ids en dur dans index.html.
 
 ## Contenu
 
