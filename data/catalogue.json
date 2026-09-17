@@ -618,27 +618,34 @@
     },
     {
       "id": "lappel-du-porte-peste",
-      "titre": "L'Appel du Porte Peste",
+      "titre": "L'Appel du Porte-Peste",
       "titreVO": null,
       "type": "campagne",
       "cycle": "Cycle 6",
-      "etat": "inconnu",
+      "etat": "disponible",
       "langue": "fr",
-      "publie": false,
-      "image": null,
+      "publie": true,
+      "image": "img/thumbs/lappel-du-porte-peste.png",
       "liens": {
         "source": "https://discord.com/channels/443151671846109195/837579876701438002",
         "fichier": null
       },
       "images": {
-        "noBleed": false,
+        "noBleed": true,
         "bleed": false
       },
       "contactPanierPartage": null,
       "commentaire": null,
-      "archive": null,
+      "creator": "Dr Jack Science",
+      "traducteur": "Chertref, Franck2655",
+      "archive": {
+        "id": "ahlcg-fr-lappel-du-porte-peste",
+        "guide": "ahlcg-fr-lappel-du-porte-peste-guide.pdf",
+        "planche": null,
+        "images": "ahlcg-fr-lappel-du-porte-peste-cartes-sans-bleed.zip"
+      },
       "datePublication": "2021-10",
-      "sortKey": "L'Appel du Porte Peste"
+      "sortKey": "Appel du Porte-Peste"
     },
     {
       "id": "letrange-cas-du-docteur-jekyll-et-mr-hyde",
