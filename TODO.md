@@ -30,7 +30,7 @@ Idées et chantiers pas encore planifiés. Rien d'urgent ici.
       la préparation/commande d'impression du contenu du catalogue (à
       rapprocher du plan d'impression facilitée ci-dessus).
 - [ ] **Investigateurs parallèles** : ajouter les investigateurs parallèles au
-      catalogue.
+      catalogue. Fichiers : https://drive.google.com/drive/folders/1rDKmK2NUZWuyHDgXWW9InmCZVGldNR8i
 - [ ] **Cartes Tabou du chapitre 1** : ajouter les cartes Tabou du chapitre 1.
 - [ ] **Torrent** : ajouter un torrent pour héberger le contenu — se souvenir
       de la proposition de Tokeeto sur le Discord d'héberger du contenu.
