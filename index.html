@@ -483,8 +483,10 @@ Promise.all([
   fetch("data/synopsis.json", { cache: "no-cache" }).then((r) => (r.ok ? r.json() : { items: {} })),
 ])
   .then(([data, syn]) => {
-    // Seules les fiches publiées apparaissent dans le catalogue.
-    items = (data.items || []).filter((i) => i.publie !== false);
+    // Seules les fiches publiées apparaissent dans le catalogue, triées par ordre alphabétique.
+    items = (data.items || [])
+      .filter((i) => i.publie !== false)
+      .sort((a, b) => a.sortKey.localeCompare(b.sortKey, "fr"));
     cycles = data.cycles || {};
     synopsisIds = new Set(Object.keys(syn.items || {}));
 
