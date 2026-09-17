@@ -1260,7 +1260,7 @@
     },
     {
       "id": "la-cite-des-secrets",
-      "titre": "La Cité des Secrets",
+      "titre": "Investigateurs - La Cité des Secrets",
       "titreVO": "City of Secrets",
       "type": "investigateurs",
       "cycle": null,
@@ -1287,7 +1287,7 @@
         "images": "ahlcg-fr-la-cite-des-secrets-cartes-sans-bleed.zip"
       },
       "datePublication": null,
-      "sortKey": "Cité des Secrets"
+      "sortKey": "Investigateurs - La Cité des Secrets"
     }
   ]
 }
