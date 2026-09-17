@@ -1263,7 +1263,7 @@
       "titre": "Investigateurs - La Cité des Secrets",
       "titreVO": "City of Secrets",
       "type": "investigateurs",
-      "cycle": null,
+      "cycle": "Cycle 6",
       "etat": "disponible",
       "langue": "fr",
       "publie": true,
