@@ -401,7 +401,7 @@ function render(list) {
           ? `<a class="dl-btn" href="${synopsisIds.has(it.id) ? `item.html?id=${esc(it.id)}` : esc(IA_ARCHIVE(archive.id))}" title="${esc(it.titre)}" aria-label="${esc(it.titre)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg></a>`
           : ""}
         ${it.creator ? `<p class="creator"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>Par <span class="name">${esc(it.creator)}</span></p>` : ""}
-        ${it.commentaire && !["Création originale FR.", "Création à faire."].includes(it.commentaire) ? `<p class="note">${esc(it.commentaire)}</p>` : ""}
+        ${it.commentaire && it.commentaire !== "Création originale FR." ? `<p class="note">${esc(it.commentaire)}</p>` : ""}
         <div class="links">
           ${!archive ? `<span class="disabled" title="Pas encore hébergé">À venir</span>` : ""}
         </div>
@@ -409,7 +409,6 @@ function render(list) {
           ${chip("typeChip", chipKeyForType(it.type), TYPE_LABEL[it.type] || it.type, `color-${chipKeyForType(it.type)}`)}
           ${it.cycle ? chip("filterCycle", it.cycle, it.cycle, "cycle") : ""}
           ${it.commentaire === "Création originale FR." ? `<span class="tag cycle">Création FR</span>` : ""}
-          ${it.commentaire === "Création à faire." ? `<span class="tag color-scenario">Création à faire</span>` : ""}
         </div>
       </div>
     </div>`;
