@@ -56,6 +56,10 @@ Idées et chantiers pas encore planifiés. Rien d'urgent ici.
       images PNG/JPG avec bleed. Vérifier si elles sont sur le Google Drive
       (lien dans le .md de FS08), les télécharger si possible pour compléter
       l'archive archive.org.
+- [ ] **L'Appel du Porte Peste : héberger sur archive.org** — campagne déjà
+      référencée dans le catalogue (Cycle 6) mais non publiée (`publie: false`,
+      `etat: inconnu`). Suivre la procédure d'upload de CONTRIBUTING.md une
+      fois le contenu prêt, puis passer `publie` à `true`.
 - [ ] **Normaliser le format des images de cartes** (PNG vs JPG) : constaté que
       Shomm exporte tantôt en PNG (non compressé, ex. Matières Noires : 792
       cartes en PNG = 4,9 Go, vs Fondations/Alice en JPG = ~1,1 Go pour un
