@@ -389,7 +389,7 @@ function render(list) {
     <div class="card${!archive ? ' no-archive' : ''}">
       ${(() => {
         const thumbInner = `${it.image
-          ? `<img src="${esc(it.image)}" alt="Illustration — ${esc(it.titre)}" loading="lazy" ${["pulsions-cynegetiques", "noel-a-arkham", "investigateurs-paralleles", "la-cite-des-secrets"].includes(it.id) ? 'style="object-position: top"' : ""}>`
+          ? `<img src="${esc(it.image)}" alt="Illustration — ${esc(it.titre)}" loading="lazy" ${["pulsions-cynegetiques", "noel-a-arkham", "la-cite-des-secrets"].includes(it.id) ? 'style="object-position: top"' : ""}>`
           : `<svg viewBox="0 0 24 24" fill="none" stroke="#e7e6e3" stroke-width="1.4"><path d="M4 4h16v16H4z"/><path d="M4 15l4-4 4 4 4-6 4 6"/></svg>`}
         <div class="thumb-title"><h3>${esc(it.titre)}</h3></div>`;
         return synopsisIds.has(it.id)

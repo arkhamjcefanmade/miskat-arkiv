@@ -35,11 +35,15 @@ Idées et chantiers pas encore planifiés. Rien d'urgent ici.
 - [ ] **Investiguer MPC Project Helper** : voir si l'outil permet de faciliter
       la préparation/commande d'impression du contenu du catalogue (à
       rapprocher du plan d'impression facilitée ci-dessus).
-- [ ] **Investigateurs parallèles** : ajouter les investigateurs parallèles au
-      catalogue. Fichiers : https://drive.google.com/drive/folders/1rDKmK2NUZWuyHDgXWW9InmCZVGldNR8i —
-      voir aussi les investigateurs parallèles de Live Moore :
-      https://canary.discord.com/channels/@me/1550098380238094357/1550099515665682552
-- [ ] **Cartes Tabou du chapitre 1** : ajouter les cartes Tabou du chapitre 1.
+- [x] **Investigateurs parallèles** et **Cartes Tabou du chapitre 1** —
+      tentés et retirés (2026-09-17). Les deux sont des reproductions quasi à
+      l'identique du travail de FFG (gabarit officiel, texte officiel,
+      parfois l'art officiel), contrairement au reste du catalogue qui est
+      constitué de créations fan originales ou de traductions. Uploadés sur
+      archive.org puis supprimés (`ia delete ... --all --no-backup`) sur
+      décision explicite : risque de plainte jugé trop élevé pour ce type de
+      contenu précis. Ne pas re-proposer sans clarifier d'abord la politique
+      du site sur la reproduction de contenu officiel FFG.
 - [ ] **Torrent** : ajouter un torrent pour héberger le contenu — se souvenir
       de la proposition de Tokeeto sur le Discord d'héberger du contenu.
 - [ ] **Section « Divers » par cycle** proposant en téléchargement à part :

@@ -1252,35 +1252,6 @@
       "traducteur": "Ligue des Joueurs Francophones d'Arkham JCE"
     },
     {
-      "id": "investigateurs-paralleles",
-      "titre": "Investigateurs Parallèles FFG",
-      "titreVO": null,
-      "type": "investigateurs",
-      "cycle": null,
-      "etat": "disponible",
-      "langue": "fr",
-      "publie": false,
-      "image": "img/thumbs/investigateurs-paralleles.png",
-      "liens": {
-        "source": null,
-        "fichier": null
-      },
-      "images": {
-        "noBleed": false,
-        "bleed": true
-      },
-      "contactPanierPartage": null,
-      "commentaire": null,
-      "archive": {
-        "id": "ahlcg-fr-investigateurs-paralleles",
-        "guide": null,
-        "planche": null,
-        "images": "ahlcg-fr-investigateurs-paralleles-cartes-avec-bleed.zip"
-      },
-      "datePublication": null,
-      "sortKey": "Investigateurs Parallèles FFG"
-    },
-    {
       "id": "la-cite-des-secrets",
       "titre": "La Cité des Secrets",
       "titreVO": "City of Secrets",
