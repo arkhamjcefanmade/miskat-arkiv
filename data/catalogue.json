@@ -1259,7 +1259,7 @@
       "cycle": null,
       "etat": "disponible",
       "langue": "fr",
-      "publie": true,
+      "publie": false,
       "image": "img/thumbs/investigateurs-paralleles.png",
       "liens": {
         "source": null,
