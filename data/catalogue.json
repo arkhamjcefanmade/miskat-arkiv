@@ -1,7 +1,7 @@
 {
   "meta": {
     "langue": "fr",
-    "miseAJour": "2026-09-15",
+    "miseAJour": "2026-09-17",
     "source": "fanmade_listing_fr.csv — communauté arkhamhorrorfr (forum + Discord)",
     "note": "Champ `type` = type de contenu ; champ `cycle` = cycle de traduction fan-made (indépendant du type). Voir `cycles` pour le détail de chaque cycle."
   },
@@ -1275,6 +1275,35 @@
       "sortKey": "Wyrm de Pensher",
       "creator": "redben",
       "traducteur": "Ligue des Joueurs Francophones d'Arkham JCE"
+    },
+    {
+      "id": "investigateurs-paralleles",
+      "titre": "Investigateurs Parallèles",
+      "titreVO": null,
+      "type": "investigateurs",
+      "cycle": null,
+      "etat": "disponible",
+      "langue": "fr",
+      "publie": true,
+      "image": "img/thumbs/investigateurs-paralleles.png",
+      "liens": {
+        "source": null,
+        "fichier": null
+      },
+      "images": {
+        "noBleed": false,
+        "bleed": true
+      },
+      "contactPanierPartage": null,
+      "commentaire": null,
+      "archive": {
+        "id": "ahlcg-fr-investigateurs-paralleles",
+        "guide": null,
+        "planche": null,
+        "images": "ahlcg-fr-investigateurs-paralleles-cartes-avec-bleed.zip"
+      },
+      "datePublication": null,
+      "sortKey": "Investigateurs Parallèles"
     }
   ]
 }
