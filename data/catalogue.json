@@ -1279,6 +1279,36 @@
       },
       "datePublication": null,
       "sortKey": "Investigateurs Parallèles FFG"
+    },
+    {
+      "id": "la-cite-des-secrets",
+      "titre": "La Cité des Secrets",
+      "titreVO": "City of Secrets",
+      "type": "investigateurs",
+      "cycle": null,
+      "etat": "disponible",
+      "langue": "fr",
+      "publie": true,
+      "image": "img/thumbs/la-cite-des-secrets.png",
+      "liens": {
+        "source": null,
+        "fichier": null
+      },
+      "images": {
+        "noBleed": true,
+        "bleed": false
+      },
+      "contactPanierPartage": null,
+      "commentaire": null,
+      "creator": "exhaled innards",
+      "archive": {
+        "id": "ahlcg-fr-la-cite-des-secrets",
+        "guide": null,
+        "planche": null,
+        "images": "ahlcg-fr-la-cite-des-secrets-cartes-sans-bleed.zip"
+      },
+      "datePublication": null,
+      "sortKey": "Cité des Secrets"
     }
   ]
 }
