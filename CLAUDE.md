@@ -11,11 +11,11 @@ scénarios fan-made indépendants (ou de scénarios/mini-campagnes hétérogène
 regroupés pour reproduire la taille d'une campagne officielle ; les autres cycles
 sont une unique campagne fan-made cohérente.
 
-Les descriptions de `Cycle 1` et `Cycle 2` dans `catalogue.json` reflètent déjà ce
-détail. Celles de `Cycle 3` à `Cycle 16` sont encore des placeholders génériques
-(« Xème lot de contenu fan-made. Détails sur le Discord de la communauté. »).
-Contenu réel de chaque cycle, pour référence future (ex. si on étoffe ces
-descriptions) :
+Les descriptions de `Cycle 1` à `Cycle 16` dans `catalogue.json` reflètent ce
+détail. Elles se limitent volontairement au contenu de chaque cycle (scénarios
+et campagnes qui le composent), sans indication de statut d'avancement
+(traduction, relecture, impression...). Contenu réel de chaque cycle, pour
+référence future :
 
 - **Cycle 1 — Les Dossiers d'Arkham 1** : huit scénarios fan-made indépendants —
   Face au Wendigo, Jouet d'une illusion, Le Festival, Le Palais du Rire, Le Pont
@@ -31,8 +31,7 @@ descriptions) :
 - **Cycle 4** : campagne fan-made de 8 scénarios, *Matière noire*. Pas de nom
   « Dossiers » car composé d'une seule campagne.
 - **Cycle 5** : campagne fan-made de 10 scénarios, *Dimensions étranges*.
-- **Cycle 6** : campagne fan-made de 8 scénarios, *L'Appel du Porte-Peste* —
-  vient tout juste d'être finalisée.
+- **Cycle 6** : campagne fan-made de 8 scénarios, *L'Appel du Porte-Peste*.
 - **Cycle 7** : campagne fan-made de 8 scénarios, *Fondations cyclopéennes*.
 - **Cycle 8 — Les Dossiers d'Arkham 4** : regroupement totalisant 8 scénarios —
   La Guerre des mondes (mini-campagne de 3 scénarios), La Légende du Cavalier
@@ -45,13 +44,9 @@ descriptions) :
   campagnes officielles — Renouveau Dévoreurs des Rêves, Renouveau
   Conspiration d'Innsmouth, et Quête onirique étendue (extension de Renouveau
   Dévoreurs des Rêves).
-- **Cycle 12 — Les Dossiers d'Arkham 6** : contient pour l'instant un scénario
-  fan-made, *Noël à Arkham*. Sera complété par *Métro 2033* (en cours de
-  relecture).
-- **Cycle 13** : campagne fan-made de 8 scénarios, *La Cité de l'Invisible* —
-  traduction en cours.
+- **Cycle 12 — Les Dossiers d'Arkham 6** : deux scénarios fan-made, *Noël à
+  Arkham* et *Métro 2033*.
+- **Cycle 13** : campagne fan-made de 8 scénarios, *La Cité de l'Invisible*.
 - **Cycle 14** : campagne fan-made de 8 scénarios, *Circus Ex Mortis*.
-- **Cycle 15** : campagne fan-made de 9 scénarios, *L'Ombre des Grands Anciens*
-  — actuellement en cours d'impression groupée.
-- **Cycle 16** : campagne fan-made de 8 scénarios, *Age Unwound* — en cours de
-  traduction.
+- **Cycle 15** : campagne fan-made de 9 scénarios, *L'Ombre des Grands Anciens*.
+- **Cycle 16** : campagne fan-made de 8 scénarios, *Age Unwound*.
