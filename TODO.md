@@ -62,6 +62,13 @@ Idées et chantiers pas encore planifiés. Rien d'urgent ici.
       référencée dans le catalogue (Cycle 6) mais non publiée (`publie: false`,
       `etat: inconnu`). Suivre la procédure d'upload de CONTRIBUTING.md une
       fois le contenu prêt, puis passer `publie` à `true`.
+- [ ] **Les Ombres de Yog Sothoth : reprendre les ressources** — repassée en
+      `etat: en-travaux` (`archive: null`, fiche visible mais marquée « À
+      venir ») suite à un contrôle qualité insatisfaisant. Ancien item
+      archive.org (à réutiliser ou remplacer une fois les ressources
+      corrigées) : `ahlcg-fr-les-ombres-de-yog-sothoth` (guide :
+      `ahlcg-fr-les-ombres-de-yog-sothoth-guide.pdf`, images :
+      `ahlcg-fr-les-ombres-de-yog-sothoth-cartes.zip`).
 - [ ] **Normaliser le format des images de cartes** (PNG vs JPG) : constaté que
       Shomm exporte tantôt en PNG (non compressé, ex. Matières Noires : 792
       cartes en PNG = 4,9 Go, vs Fondations/Alice en JPG = ~1,1 Go pour un

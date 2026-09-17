@@ -917,7 +917,7 @@
       "titreVO": null,
       "type": "campagne",
       "cycle": "Cycle 10",
-      "etat": "disponible",
+      "etat": "en-travaux",
       "langue": "fr",
       "publie": true,
       "image": "img/thumbs/les-ombres-de-yog-sothoth.jpg",
@@ -932,12 +932,7 @@
       "contactPanierPartage": null,
       "commentaire": null,
       "creator": "Red_Rob",
-      "archive": {
-        "id": "ahlcg-fr-les-ombres-de-yog-sothoth",
-        "guide": "ahlcg-fr-les-ombres-de-yog-sothoth-guide.pdf",
-        "planche": null,
-        "images": "ahlcg-fr-les-ombres-de-yog-sothoth-cartes.zip"
-      },
+      "archive": null,
       "datePublication": "2023-05",
       "sortKey": "Ombres de Yog Sothoth",
       "traducteur": "Fuhraih"
