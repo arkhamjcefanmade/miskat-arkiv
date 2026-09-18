@@ -91,7 +91,7 @@
       "publie": true,
       "image": "img/thumbs/alice-au-pays-des-merveilles.jpg",
       "liens": {
-        "source": "https://discord.com/channels/443151671846109195/977511254572814346",
+        "source": null,
         "fichier": null
       },
       "images": {
@@ -152,7 +152,7 @@
       "publie": true,
       "image": "img/thumbs/au-coeur-des-tenebres.jpg",
       "liens": {
-        "source": "https://discord.com/channels/443151671846109195/711513306069729330/1503888152237047819",
+        "source": null,
         "fichier": null
       },
       "images": {
@@ -236,7 +236,7 @@
       "publie": true,
       "image": "img/thumbs/circus-ex-mortis.jpg",
       "liens": {
-        "source": "https://discord.com/channels/443151671846109195/837579876701438002",
+        "source": null,
         "fichier": null
       },
       "images": {
@@ -383,7 +383,7 @@
       "publie": true,
       "image": "img/thumbs/les-disparus-de-killineq.jpg",
       "liens": {
-        "source": "https://discord.com/channels/443151671846109195/711513306069729330/1503888152237047819",
+        "source": null,
         "fichier": null
       },
       "images": {
@@ -474,7 +474,7 @@
       "publie": true,
       "image": "img/thumbs/fondations-cyclopeenes.jpg",
       "liens": {
-        "source": "https://discord.com/channels/443151671846109195/837579876701438002",
+        "source": null,
         "fichier": null
       },
       "images": {
@@ -505,7 +505,7 @@
       "publie": true,
       "image": "img/thumbs/la-guerre-des-mondes.jpg",
       "liens": {
-        "source": "https://discord.com/channels/443151671846109195/998284425177600042",
+        "source": null,
         "fichier": null
       },
       "images": {
@@ -614,7 +614,7 @@
       "datePublication": "2019-04",
       "sortKey": "Jouet d'une Illusion",
       "creator": "Keith Owens",
-      "traducteur": "Ligue des Joueurs Francophones d'Arkham JCE"
+      "traducteur": "Michel Le Roy"
     },
     {
       "id": "lappel-du-porte-peste",
@@ -627,7 +627,7 @@
       "publie": true,
       "image": "img/thumbs/lappel-du-porte-peste.png",
       "liens": {
-        "source": "https://discord.com/channels/443151671846109195/837579876701438002",
+        "source": null,
         "fichier": null
       },
       "images": {
@@ -658,7 +658,7 @@
       "publie": true,
       "image": "img/thumbs/letrange-cas-du-docteur-jekyll-et-mr-hyde.jpg",
       "liens": {
-        "source": "https://discord.com/channels/443151671846109195/998284425177600042",
+        "source": null,
         "fichier": null
       },
       "images": {
@@ -781,7 +781,7 @@
       "publie": true,
       "image": "img/thumbs/la-legende-du-cavalier-sans-tete.jpg",
       "liens": {
-        "source": "https://discord.com/channels/443151671846109195/998284425177600042",
+        "source": null,
         "fichier": null
       },
       "images": {
@@ -812,7 +812,7 @@
       "publie": true,
       "image": "img/thumbs/la-maison-vaudou.jpg",
       "liens": {
-        "source": "https://discord.com/channels/443151671846109195/711513306069729330/1503888152237047819",
+        "source": null,
         "fichier": null
       },
       "images": {
@@ -842,7 +842,7 @@
       "publie": true,
       "image": "img/thumbs/matiere-noire.jpg",
       "liens": {
-        "source": "https://discord.com/channels/443151671846109195/837579876701438002",
+        "source": null,
         "fichier": null
       },
       "images": {
@@ -873,7 +873,7 @@
       "publie": true,
       "image": "img/thumbs/noel-a-arkham.jpg",
       "liens": {
-        "source": "https://discord.com/channels/443151671846109195/1340972554558640189",
+        "source": null,
         "fichier": null
       },
       "images": {
@@ -904,7 +904,7 @@
       "publie": true,
       "image": "img/thumbs/les-ombres-de-yog-sothoth.jpg",
       "liens": {
-        "source": "https://discord.com/channels/443151671846109195/977511254572814346",
+        "source": null,
         "fichier": null
       },
       "images": {
@@ -1022,7 +1022,7 @@
       "publie": true,
       "image": "img/thumbs/quete-onirique-etendue.jpg",
       "liens": {
-        "source": "https://discord.com/channels/443151671846109195/1340972554558640189",
+        "source": null,
         "fichier": null
       },
       "images": {
@@ -1053,7 +1053,7 @@
       "publie": true,
       "image": "img/thumbs/renouveau-conspiration-dinnsmouth.jpg",
       "liens": {
-        "source": "https://discord.com/channels/443151671846109195/1340972554558640189",
+        "source": null,
         "fichier": null
       },
       "images": {
@@ -1084,7 +1084,7 @@
       "publie": true,
       "image": "img/thumbs/renouveau-devoreurs-des-reves.jpg",
       "liens": {
-        "source": "https://discord.com/channels/443151671846109195/1340972554558640189",
+        "source": null,
         "fichier": null
       },
       "images": {

@@ -276,11 +276,16 @@ Promise.all([
     document.getElementById("resume").textContent = s.resume;
 
     const creditRows = [];
-    if (it.creator) creditRows.push(["Auteur original", it.creator]);
-    if (it.traducteur) creditRows.push(["Traduction", it.traducteur]);
+    if (it.creator) creditRows.push(["Auteur original", esc(it.creator)]);
+    if (it.traducteur) creditRows.push(["Traduction", esc(it.traducteur)]);
+    if (it.liens && it.liens.source) {
+      let host = "Lien";
+      try { host = new URL(it.liens.source).hostname.replace(/^www\./, ""); } catch {}
+      creditRows.push(["Source", `<a href="${esc(it.liens.source)}" target="_blank" rel="noopener">${esc(host)}</a>`]);
+    }
     if (creditRows.length) {
       document.getElementById("creditsList").innerHTML = creditRows
-        .map(([label, value]) => `<li><span class="clabel">${esc(label)}</span><span class="cvalue">${esc(value)}</span></li>`)
+        .map(([label, value]) => `<li><span class="clabel">${esc(label)}</span><span class="cvalue">${value}</span></li>`)
         .join("");
       document.getElementById("creditsBox").hidden = false;
     }
