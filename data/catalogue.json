@@ -267,20 +267,20 @@
       "publie": true,
       "image": "img/thumbs/dimensions-etranges.jpg",
       "liens": {
-        "source": null,
+        "source": "https://wywid.me/dimensions-etranges/",
         "fichier": null
       },
       "images": {
-        "noBleed": false,
+        "noBleed": true,
         "bleed": false
       },
       "contactPanierPartage": "Wywid",
       "commentaire": "Création originale FR.",
       "archive": {
         "id": "ahlcg-fr-dimensions-etranges",
-        "guide": "FC10 - Dimensions Etranges - Guide de Campagne (A4).pdf",
-        "planche": null,
-        "images": "ahlcg-fr-dimensions-etranges-archive-complete.zip"
+        "guide": "ahlcg-fr-dimensions-etranges-guide.pdf",
+        "planche": "ahlcg-fr-dimensions-etranges-planche-a4.zip",
+        "images": "ahlcg-fr-dimensions-etranges-cartes-sans-bleed.zip"
       },
       "datePublication": "2023-05",
       "sortKey": "Dimensions Étranges",

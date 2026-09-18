@@ -144,6 +144,18 @@
   .box li:last-child { border-bottom: none; }
   .box .fname { color: var(--text); }
   .box .fsize { color: var(--text-dim); font-size: 0.8rem; white-space: nowrap; }
+  .box .spoiler-tag {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 1px 7px;
+    border-radius: 999px;
+    background: rgba(179,116,63,0.18);
+    color: var(--seal);
+    font-size: 0.72rem;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: help;
+  }
   .box a.fdl { color: var(--accent); text-decoration: none; white-space: nowrap; }
   .box a.fdl:hover { text-decoration: underline; }
   .box .clabel { color: var(--text-dim); }
@@ -293,7 +305,9 @@ Promise.all([
 const FILE_LABELS = [
   [/guide/i, "Guide"],
   [/planche/i, "Planche d'impression"],
-  [/separateur/i, "Séparateurs"],
+  [/separateur|intercalaire/i, "Séparateurs"],
+  [/background/i, "Background de la campagne"],
+  [/carnet.?de.?campagne/i, "Carnet de campagne"],
   [/cartes|images/i, "Cartes (images)"],
   [/archive.?complete/i, "Archive complète"],
 ];
@@ -308,6 +322,9 @@ const formatSize = (bytes) => {
   const mb = bytes / 1048576;
   return mb >= 1 ? mb.toFixed(1) + " Mo" : (bytes / 1024).toFixed(0) + " Ko";
 };
+// Fichiers dont le contenu dévoile des éléments d'intrigue (à ne lire
+// qu'après avoir joué la campagne) : signalés par un badge dans la liste.
+const SPOILER_FILES = /background/i;
 
 function loadFiles(archiveId) {
   fetch(`https://archive.org/metadata/${encodeURIComponent(archiveId)}`)
@@ -320,7 +337,7 @@ function loadFiles(archiveId) {
       document.getElementById("filesList").innerHTML = files
         .map(
           (f) => `<li>
-            <span class="fname">${esc(labelFor(f.name))}${f.size ? ` <span class="fsize">(${esc(formatSize(Number(f.size)))})</span>` : ""}</span>
+            <span class="fname">${esc(labelFor(f.name))}${f.size ? ` <span class="fsize">(${esc(formatSize(Number(f.size)))})</span>` : ""}${SPOILER_FILES.test(f.name) ? ` <span class="spoiler-tag" title="Contient des éléments d'intrigue — à réserver pour après la campagne">⚠ Spoils</span>` : ""}</span>
             <a class="fdl" href="https://archive.org/download/${esc(archiveId)}/${esc(f.name)}" target="_blank">Télécharger ↓</a>
           </li>`,
         )
