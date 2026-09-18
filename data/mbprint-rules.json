@@ -1,0 +1,15 @@
+{
+  "_doc": "Règles par item pour tools/build-mbprint.mjs (voir l'en-tête de l'outil). quantitiesFile : fichier texte du zip source listant les exemplaires (\"En 3x : - Nom (set X)\"), les cartes non listées valent 1. playerBack : motifs (regex, sur le nom de fichier) des cartes recto seul qui doivent recevoir le dos joueur (soutiens d'histoire rangés dans des dossiers de scénario).",
+  "items": {
+    "la-sororite-des-secrets": {
+      "quantitiesFile": "Nombres de Cartes à Faire.txt"
+    },
+    "renouveau-devoreurs-des-reves": {
+      "playerBack": [
+        "^Le-Chat-Noir-Face",
+        "^Cadette-Maheswaran",
+        "^Le-Capitaine"
+      ]
+    }
+  }
+}

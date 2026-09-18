@@ -11,7 +11,8 @@
     "upload:print": "node tools/upload-print-items.mjs",
     "impose": "node tools/impose.mjs",
     "prep:mpc": "node tools/prep-mpc.mjs",
-    "prep:mbprint": "node tools/prep-mbprint.mjs"
+    "prep:mbprint": "node tools/prep-mbprint.mjs",
+    "build:mbprint": "node tools/build-mbprint.mjs"
   },
   "devDependencies": {
     "adm-zip": "^0.6.1",

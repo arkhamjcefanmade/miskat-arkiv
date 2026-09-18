@@ -44,6 +44,9 @@ Idées et chantiers pas encore planifiés. Rien d'urgent ici.
       décision explicite : risque de plainte jugé trop élevé pour ce type de
       contenu précis. Ne pas re-proposer sans clarifier d'abord la politique
       du site sur la reproduction de contenu officiel FFG.
+      Précision (2026-09-18) : les dos de cartes génériques (joueur et
+      rencontre) sont acceptés dans les zips MBPrint, pour que l'impression
+      reste simple ; la décision ne concerne que ces dos, pas les cartes.
 - [ ] **Torrent** : ajouter un torrent pour héberger le contenu — se souvenir
       de la proposition de Tokeeto sur le Discord d'héberger du contenu.
 - [ ] **Section « Divers » par cycle** proposant en téléchargement à part :
