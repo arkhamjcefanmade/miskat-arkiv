@@ -9,11 +9,14 @@
     "validate": "node tools/validate-catalogue.mjs",
     "build:print": "node tools/build-print-items.mjs",
     "upload:print": "node tools/upload-print-items.mjs",
-    "impose": "node tools/impose.mjs"
+    "impose": "node tools/impose.mjs",
+    "prep:mpc": "node tools/prep-mpc.mjs"
   },
   "devDependencies": {
+    "adm-zip": "^0.6.1",
     "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
+    "iconv-lite": "^0.7.3",
     "pdf-lib": "^1.17.1",
     "sharp": "^0.33.5"
   }
