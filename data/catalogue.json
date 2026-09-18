@@ -96,7 +96,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Franck2655",
       "commentaire": null,
@@ -127,7 +127,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Vinnquest",
       "commentaire": "Création originale FR.",
@@ -156,8 +156,8 @@
         "fichier": null
       },
       "images": {
-        "noBleed": false,
-        "bleed": false
+        "noBleed": true,
+        "bleed": true
       },
       "contactPanierPartage": "Vinnquest",
       "commentaire": "Création originale FR.",
@@ -211,7 +211,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Vinnquest",
       "commentaire": "Création originale FR.",
@@ -241,7 +241,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": null,
       "commentaire": null,
@@ -326,7 +326,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Vinnquest",
       "commentaire": null,
@@ -357,7 +357,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Vinnquest",
       "commentaire": null,
@@ -387,8 +387,8 @@
         "fichier": null
       },
       "images": {
-        "noBleed": false,
-        "bleed": false
+        "noBleed": true,
+        "bleed": true
       },
       "contactPanierPartage": "Vinnquest",
       "commentaire": "Création originale FR.",
@@ -418,7 +418,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Vinnquest",
       "commentaire": "Création originale FR.",
@@ -448,7 +448,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Vinnquest",
       "commentaire": null,
@@ -479,7 +479,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Franck2655 / Ayoross",
       "commentaire": null,
@@ -510,7 +510,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Franck2655",
       "commentaire": null,
@@ -541,7 +541,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Vinnquest",
       "commentaire": null,
@@ -571,7 +571,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Vinnquest",
       "commentaire": null,
@@ -601,7 +601,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Vinnquest",
       "commentaire": null,
@@ -663,7 +663,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Franck2655",
       "commentaire": null,
@@ -671,7 +671,7 @@
         "id": "ahlcg-fr-letrange-cas-du-docteur-jekyll-et-mr-hyde",
         "guide": "ahlcg-fr-letrange-cas-du-docteur-jekyll-et-mr-hyde-guide.pdf",
         "planche": null,
-        "images": "ahlcg-fr-letrange-cas-du-docteur-jekyll-et-mr-hyde.zip"
+        "images": "ahlcg-fr-letrange-cas-du-docteur-jekyll-et-mr-hyde-archive-complete.zip"
       },
       "datePublication": "2021-03",
       "sortKey": "L'Étrange Cas du Dr. Jekyll et Mr Hyde",
@@ -694,7 +694,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Vinnquest",
       "commentaire": null,
@@ -725,7 +725,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Vinnquest",
       "commentaire": null,
@@ -847,7 +847,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Ayoross",
       "commentaire": null,
@@ -935,7 +935,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Vinnquest",
       "commentaire": null,
@@ -966,7 +966,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Vinnquest",
       "commentaire": null,
@@ -997,7 +997,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Vinnquest",
       "commentaire": "Création originale FR.",
@@ -1120,7 +1120,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Vinnquest",
       "commentaire": null,
@@ -1151,7 +1151,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Vinnquest",
       "commentaire": null,
@@ -1212,7 +1212,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Vinnquest",
       "commentaire": null,
@@ -1243,7 +1243,7 @@
       },
       "images": {
         "noBleed": false,
-        "bleed": false
+        "bleed": true
       },
       "contactPanierPartage": "Vinnquest",
       "commentaire": null,
