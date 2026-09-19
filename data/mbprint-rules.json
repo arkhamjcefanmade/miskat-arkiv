@@ -1,8 +1,14 @@
 {
-  "_doc": "Règles par item pour tools/build-mbprint.mjs (voir l'en-tête de l'outil). quantitiesFile : fichier texte du zip source listant les exemplaires (\"En 3x : - Nom (set X)\"), les cartes non listées valent 1. playerBack : motifs (regex, sur le nom de fichier) des cartes recto seul qui doivent recevoir le dos joueur (soutiens d'histoire rangés dans des dossiers de scénario).",
+  "_doc": "Règles par item pour tools/build-mbprint.mjs (voir l'en-tête de l'outil). quantitiesFile : fichier texte du zip source listant les exemplaires (\"En 3x : - Nom (set X)\"), les cartes non listées valent 1. playerBack : motifs (regex, sur le nom de fichier) des cartes recto seul qui doivent recevoir le dos joueur (soutiens d'histoire rangés dans des dossiers de scénario). playerDir : regex remplaçant la détection par défaut des dossiers de cartes joueur (\"(?!)\" = aucun).",
   "items": {
     "la-sororite-des-secrets": {
-      "quantitiesFile": "Nombres de Cartes à Faire.txt"
+      "quantitiesFile": "Nombres de Cartes à Faire.txt",
+      "playerDir": "(?!)",
+      "playerBack": [
+        "^91 Lame de la Sororit",
+        "^92 Appui de la Sororit",
+        "^00 Elizabeth Baxter"
+      ]
     },
     "renouveau-devoreurs-des-reves": {
       "playerBack": [

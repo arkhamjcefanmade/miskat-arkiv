@@ -281,7 +281,7 @@ for (const [deckKey, list] of deckMap) {
       else backName = putRaw(e.back);
       stats.pairs++;
     } else {
-      const kind = PLAYER_DIR.test(e.front.dir) || (rules.playerBack || []).some((rx) => new RegExp(rx, "i").test(e.front.base)) ? "player" : "enc";
+      const kind = (rules.playerDir ? new RegExp(rules.playerDir, "i") : PLAYER_DIR).test(e.front.dir) || (rules.playerBack || []).some((rx) => new RegExp(rx, "i").test(e.front.base)) ? "player" : "enc";
       backName = landscape ? null : await genericBack(kind);
       if (backName) { stats[kind === "player" ? "genericPlayer" : "genericEnc"]++; assigned.push(`${kind === "player" ? "JOUEUR   " : "RENCONTRE"} | ${e.front.rel}`); } else { stats.noBack++; assigned.push(`SANS DOS  | ${e.front.rel}`); }
     }
