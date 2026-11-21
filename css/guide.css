@@ -2,6 +2,11 @@
    base.css ; les pages index/archives/item/apropos définissent leurs propres
    styles en ligne, ici tout est mutualisé entre les 4 pages du guide. */
 
+/* Empêche les navigateurs mobiles de regonfler la police de certains tableaux
+   (ceux qui débordent de l'écran) et pas d'autres : toutes les tables du guide
+   gardent la même taille de texte. */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+
 a { color: var(--accent); }
 
 header {
