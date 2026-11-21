@@ -5,6 +5,7 @@
 //     ahlcg-fr-<id>-guide.pdf          (si présent)
 //     ahlcg-fr-<id>-planche-a4.pdf     (si présent)
 //     ahlcg-fr-<id>-cartes-avec-bleed.zip
+//     ahlcg-fr-<id>-<name>             (une par entrée de "extras", si présent)
 //
 // Usage :
 //   node tools/build-print-items.mjs                 -> toutes les entrées du manifeste
@@ -60,6 +61,13 @@ if (existsSync(LOCAL_MANIFEST)) {
   const local = JSON.parse(readFileSync(LOCAL_MANIFEST, "utf8"));
   Object.assign(manifest.roots, local.roots);
 }
+// Surcharge par variable d'environnement : PRINT_ROOT_<NOM EN MAJUSCULES>
+// (ex. PRINT_ROOT_TELECHARGEMENTS=/chemin). Utile quand les chemins du
+// manifeste local (Windows) n'existent pas dans le shell utilisé.
+for (const name of Object.keys(manifest.roots)) {
+  const env = process.env[`PRINT_ROOT_${name.toUpperCase()}`];
+  if (env) manifest.roots[name] = env;
+}
 const only = process.argv.slice(2);
 const entries = Object.entries(manifest.items).filter(([id]) => !only.length || only.includes(id));
 if (!entries.length) {
@@ -81,7 +89,12 @@ for (const [id, it] of entries) {
   const files = [];
   const put = (relSrc, destName) => {
     if (!relSrc) return;
-    const src = path.resolve(root, relSrc);
+    let src = path.resolve(root, relSrc);
+    // Les noms de fichiers venant d'un zip ou d'un autre système peuvent avoir
+    // leurs accents décomposés (NFD) : on essaie les deux formes.
+    if (!existsSync(src)) {
+      src = [src.normalize("NFD"), src.normalize("NFC")].find((p) => existsSync(p)) || src;
+    }
     if (!existsSync(src)) { console.error(`! ${id} : source absente ${relSrc}`); return; }
     const dest = path.join(itemDir, destName);
     copyFileSync(src, dest);
@@ -125,6 +138,10 @@ for (const [id, it] of entries) {
   } else {
     put(it.planche, `ahlcg-fr-${id}-planche-a4.pdf`);
   }
+
+  // extras : fichiers supplémentaires copiés tels quels dans l'item, sous le nom
+  // ahlcg-fr-<id>-<name> (ex. { "src": "dossier/Planche.pdf", "name": "planche-a4-sans-bleed.pdf" }).
+  for (const ex of it.extras || []) put(ex.src, `ahlcg-fr-${id}-${ex.name}`);
 
   if (it.imagesDir) {
     // un seul dossier, ou une liste (ex. cartes taille normale + cartes minis)

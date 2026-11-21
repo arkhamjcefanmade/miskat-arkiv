@@ -14,6 +14,14 @@ campagnes de plusieurs Go), on dépose plusieurs fichiers dans l'item tels quels
 on met `"zip": null` dans la fiche, et le catalogue renvoie vers la **page** de
 l'item (l'utilisateur choisit quoi télécharger sur archive.org).
 
+## Avec Claude
+
+Le dépôt contient des skills qui automatisent cette procédure (préparation des
+fichiers, upload, fiche, résumé, publication). Dans Claude, demande par exemple
+« ajoute <titre> au catalogue » en joignant le chemin des zips téléchargés :
+le skill `ajouter-contenu` (`.claude/skills/`) guide les étapes et demande ton
+accord avant l'upload et le push.
+
 ## Prérequis
 
 ```bash

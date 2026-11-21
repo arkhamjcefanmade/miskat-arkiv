@@ -2,7 +2,8 @@
   "_doc": "Mapping fiche du catalogue -> fichiers sources pour les items archive.org. Chemins relatifs à roots[<source>]. Consommé par tools/build-print-items.mjs. Les valeurs ci-dessous sont des placeholders : chaque contributeur définit ses vrais chemins locaux dans data/print-manifest.local.json (non versionné, voir .gitignore).",
   "roots": {
     "shomm": "<chemin local vers le dossier « Contenu de Shomm »>",
-    "mysthrestis": "<chemin local vers le dossier « Contenu de Mysthrestis »>"
+    "mysthrestis": "<chemin local vers le dossier « Contenu de Mysthrestis »>",
+    "telechargements": "<chemin local vers le dossier où extraire les zips Google Drive / Discord, un sous-dossier par id de fiche>"
   },
   "items": {
     "face-au-wendigo": {

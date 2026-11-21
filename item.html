@@ -309,7 +309,10 @@ Promise.all([
 // cas d'échec (l'API archive.org peut être lente ou temporairement down).
 const FILE_LABELS = [
   [/guide/i, "Guide"],
+  [/planche.*sans-bleed/i, "Planche d'impression (sans fond perdu)"],
+  [/planche.*avec-bleed/i, "Planche d'impression (avec fond perdu)"],
   [/planche/i, "Planche d'impression"],
+  [/mbprint/i, "PDF pour MBPrint (une carte par page)"],
   [/separateur|intercalaire/i, "Séparateurs"],
   [/background/i, "Background de la campagne"],
   [/carnet.?de.?campagne/i, "Carnet de campagne"],

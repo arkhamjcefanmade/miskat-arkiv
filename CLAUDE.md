@@ -45,8 +45,18 @@ référence future :
   Conspiration d'Innsmouth, et Quête onirique étendue (extension de Renouveau
   Dévoreurs des Rêves).
 - **Cycle 12 — Les Dossiers d'Arkham 6** : deux scénarios fan-made, *Noël à
-  Arkham* et *Métro 2033*.
+  Arkham* et *Métro 1933*.
 - **Cycle 13** : campagne fan-made de 8 scénarios, *La Cité de l'Invisible*.
 - **Cycle 14** : campagne fan-made de 8 scénarios, *Circus Ex Mortis*.
 - **Cycle 15** : campagne fan-made de 9 scénarios, *L'Ombre des Grands Anciens*.
 - **Cycle 16** : campagne fan-made de 8 scénarios, *Age Unwound*.
+
+## Ajouter du contenu : skills du dépôt
+
+Le flux d'ajout d'un contenu est découpé en skills dans `.claude/skills/`.
+Point d'entrée : **`ajouter-contenu`**, qui enchaîne `fiche-catalogue`,
+`preparer-fichiers`, `upload-archive`, `resume-sans-spoil`,
+`preparer-impression` et `publier-site`. Les zips Google Drive / Discord sont
+extraits sous la racine `telechargements` du manifeste (chemin réel dans
+`data/print-manifest.local.json`). Jamais d'upload archive.org, de push git ni
+de suppression sans accord explicite ; jamais de `ia delete`.
