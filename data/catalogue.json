@@ -1,7 +1,7 @@
 {
   "meta": {
     "langue": "fr",
-    "miseAJour": "2026-09-17",
+    "miseAJour": "2026-11-21",
     "source": "fanmade_listing_fr.csv — communauté arkhamhorrorfr (forum + Discord)",
     "note": "Champ `type` = type de contenu ; champ `cycle` = cycle de traduction fan-made (indépendant du type). Voir `cycles` pour le détail de chaque cycle."
   },
@@ -40,7 +40,7 @@
       "description": "Onzième lot de contenu fan-made, regroupant trois extensions fan-made de campagnes officielles — Renouveau Dévoreurs des Rêves, Renouveau Conspiration d'Innsmouth, et Quête Onirique Étendue, qui étend Renouveau Dévoreurs des Rêves."
     },
     "Cycle 12": {
-      "description": "Douzième lot de contenu fan-made, qui rassemble deux scénarios fan-made : Noël à Arkham et Métro 2033."
+      "description": "Douzième lot de contenu fan-made, qui rassemble deux scénarios fan-made : Noël à Arkham et Métro 1933."
     },
     "Cycle 13": {
       "description": "Treizième lot de contenu fan-made : une campagne complète de huit scénarios, La Cité de l'Invisible."
@@ -1288,6 +1288,36 @@
       },
       "datePublication": null,
       "sortKey": "Investigateurs - La Cité des Secrets"
+    },
+    {
+      "id": "metro-1933",
+      "titre": "Métro 1933",
+      "titreVO": null,
+      "type": "scenario",
+      "cycle": "Cycle 12",
+      "etat": "disponible",
+      "langue": "fr",
+      "publie": true,
+      "image": "img/thumbs/metro-1933.jpg",
+      "liens": {
+        "source": "https://discord.com/channels/443151671846109195/1379371846692245525",
+        "fichier": null
+      },
+      "images": {
+        "noBleed": false,
+        "bleed": true
+      },
+      "contactPanierPartage": null,
+      "commentaire": "Création originale FR. Images : Nonobstant avec Leonardo, ChatGPT et Gemini.",
+      "archive": {
+        "id": "ahlcg-fr-metro-1933",
+        "guide": "ahlcg-fr-metro-1933-guide.pdf",
+        "planche": "ahlcg-fr-metro-1933-planche-a4-sans-bleed.pdf",
+        "images": "ahlcg-fr-metro-1933-cartes-avec-bleed.zip"
+      },
+      "datePublication": "2026-11",
+      "sortKey": "Métro 1933",
+      "creator": "Nonobstant"
     }
   ]
 }

@@ -55,6 +55,11 @@ const MAP = {
     src: "covers/S1/investigateurs-jenna-hunter.jpg",
     left: 0.049, right: 0.449, top: 0.206, bottom: 0.654,
   },
+
+  // --- Cycle 12 ---
+  // Couverture du guide (rendue depuis la page 1) : on isole l'illustration
+  // entre les deux filets décoratifs, sans bandeau logo ni titre.
+  "metro-1933": { src: "covers/S12/metro-1933.png", top: 0.312, bottom: 0.792 },
 };
 
 await mkdir(OUT_DIR, { recursive: true });

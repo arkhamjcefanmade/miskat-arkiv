@@ -238,3 +238,25 @@
     }
   }
 }
+    },
+    "metro-1933": {
+      "source": "telechargements",
+      "guide": "Metro_1933/Guide de scénario.pdf",
+      "planche": null,
+      "extras": [
+        {
+          "src": "Metro_1933/metro_1933_no_bleed.pdf",
+          "name": "planche-a4-sans-bleed.pdf"
+        },
+        {
+          "src": "Metro_1933/Métro 1933 - export Plain.pdf",
+          "name": "planche-a4-avec-bleed.pdf"
+        },
+        {
+          "src": "Metro_1933/Métro 1933 - MB Print.pdf",
+          "name": "mbprint.pdf"
+        }
+      ],
+      "imagesDir": "Metro_1933/img avec bleed",
+      "imagesBleed": true,
+      "creator": "Nonobstant"
