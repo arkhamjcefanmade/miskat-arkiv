@@ -183,9 +183,9 @@
       "creator": "The Beard (Tyler Gotch) (VO) ; Franck2655 et Chertref (trad.)"
     },
     "la-maison-vaudou": {
-      "source": "shomm",
-      "guide": "09 - Scénarios Fan-Made/FS08 - La Maison Vaudou (04-2023)/Guide/FS08 - Guide de Campagne (A4).pdf",
-      "planche": "09 - Scénarios Fan-Made/FS08 - La Maison Vaudou (04-2023)/Cartes/Cartes (Poker - 8.3 marge)/FS08 - Cartes (Poker - 8.3 marge).pdf",
+      "source": "telechargements",
+      "guide": "La Maison Vaudou Guide 2026/FS08 - Guide de Campagne 2026 v2 (US - 3.0 marge).pdf",
+      "planche": "Contenu de Shomm/09 - Scénarios Fan-Made/FS08 - La Maison Vaudou (04-2023)/Cartes/Cartes (Poker - 8.3 marge)/FS08 - Cartes (Poker - 8.3 marge).pdf",
       "imagesDir": null,
       "creator": "Fragarch et Mendax"
     },
@@ -204,6 +204,14 @@
       "imagesSuffix": "archive-complete",
       "imagesExclude": ["FC01 - Les Disparus de Killineq (05-2020).md"],
       "creator": "Docteur Cheux"
+    },
+    "lappel-du-porte-peste": {
+      "source": "telechargements",
+      "guide": "L'appel du porte peste/Guide de Campagne Porte Peste.pdf",
+      "planche": null,
+      "imagesDir": "L'appel du porte peste/Cartes png sans bleed",
+      "imagesBleed": false,
+      "creator": "Dr Jack Science (VO) ; Chertref et Franck2655 (trad.)"
     },
     "circus-ex-mortis": {
       "source": "shomm",
@@ -235,9 +243,6 @@
       "planche": null,
       "imagesDir": null,
       "creator": "The Beard"
-    }
-  }
-}
     },
     "metro-1933": {
       "source": "telechargements",
@@ -260,3 +265,6 @@
       "imagesDir": "Metro_1933/img avec bleed",
       "imagesBleed": true,
       "creator": "Nonobstant"
+    }
+  }
+}
