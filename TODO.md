@@ -33,9 +33,13 @@ Idées et chantiers pas encore planifiés. Rien d'urgent ici.
       vs format carte, papier, fond perdu, recto/verso. Plan de travail détaillé
       (MBPrint en priorité, puis MPC) : [plan_impression_facilitee.md](plan_impression_facilitee.md).
       Premier jet rédigé (2026-11-21) : [guide.html](guide.html) et
-      `guide-*.html` (fan-made, impression, glossaire/FAQ). Reste à faire : le
-      test à blanc MBPrint/MPC pour lever les encadrés « À valider » de
-      `guide-impression.html`, puis cocher cet item.
+      `guide-*.html` (fan-made, impression, glossaire/FAQ), en ligne. **À vérifier :**
+      les tutoriels MBPrint et MPC de `guide-impression.html` (section 8) n'ont
+      pas été testés de bout en bout ; les encadrés « À valider » ont été retirés
+      du site, et une relecture a été demandée aux membres de la communauté
+      habitués de l'impression fan-made. Attendre leurs retours (et reporter
+      les corrections, notamment le renommage des images pour l'extension MPC)
+      avant de cocher cet item.
 - [ ] **Investiguer MPC Project Helper** : voir si l'outil permet de faciliter
       la préparation/commande d'impression du contenu du catalogue (à
       rapprocher du plan d'impression facilitée ci-dessus).
