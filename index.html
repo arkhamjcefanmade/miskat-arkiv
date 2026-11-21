@@ -67,17 +67,48 @@
     min-width: 0;
   }
 
-  .search {
-    background: var(--bg);
-    border: 1px solid var(--border);
-    color: var(--text);
-    padding: 8px 14px;
-    border-radius: 6px;
-    font-size: 0.88rem;
+  .search-wrap {
+    position: relative;
+    display: flex;
     min-width: 140px;
     flex: 1;
     max-width: 200px;
   }
+
+  .search {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 32px 8px 14px;
+    border-radius: 6px;
+    font-size: 0.88rem;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .search-clear {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    color: var(--text);
+    opacity: 0.6;
+    cursor: pointer;
+    font-size: 1.1rem;
+    line-height: 1;
+  }
+
+  .search-clear:hover { opacity: 1; }
+  .search-clear[hidden] { display: none; }
 
   .discord-link {
     display: flex;
@@ -291,7 +322,7 @@
     header { padding: 14px 18px; }
     .brand-text .tagline { display: none; }
     .header-right { width: 100%; }
-    .search { width: 100%; }
+    .search-wrap { max-width: none; }
     .grid, .filters { padding-left: 18px; padding-right: 18px; }
   }
 </style>
@@ -314,7 +345,10 @@
     </div>
   </a>
   <div class="header-right">
-    <input class="search" type="text" placeholder="Rechercher..." id="searchInput">
+    <div class="search-wrap">
+      <input class="search" type="text" placeholder="Rechercher..." id="searchInput">
+      <button type="button" class="search-clear" id="searchClear" aria-label="Effacer la recherche" title="Effacer la recherche" hidden>&times;</button>
+    </div>
     <a href="https://discord.com/invite/A23rum4" class="discord-link" title="Rejoindre la communauté Arkham JCE FR sur Discord" target="_blank" aria-label="Discord">
       <img src="img/discord.png" alt="Discord">
     </a>
@@ -457,6 +491,9 @@ function populateCycleSelect() {
 function applyFilters() {
   const chip = activeChipKey ? CHIP_BY_KEY[activeChipKey] : null;
   const q = document.getElementById("searchInput").value.trim().toLowerCase();
+  // Croix d'effacement visible seulement si le champ contient du texte
+  // (couvre aussi les resets programmatiques : select de cycle, logo).
+  document.getElementById("searchClear").hidden = !document.getElementById("searchInput").value;
 
   updateCycleInfo(activeCycle);
   updateTypeChipsUI();
@@ -499,7 +536,15 @@ Promise.all([
     emptyEl.textContent = `Impossible de charger le catalogue (${err.message}).`;
   });
 
-document.getElementById("searchInput").addEventListener("input", applyFilters);
+const searchInput = document.getElementById("searchInput");
+const searchClear = document.getElementById("searchClear");
+searchInput.addEventListener("input", applyFilters);
+// Croix : vide la saisie et réaffiche tout le contenu (visibilité gérée dans applyFilters).
+searchClear.addEventListener("click", () => {
+  searchInput.value = "";
+  applyFilters();
+  searchInput.focus();
+});
 
 // Chips de type dans l'en-tête -> un seul actif à la fois ; re-clic pour l'enlever.
 // « Tout » remet toujours à zéro (pas un toggle).
