@@ -1,0 +1,274 @@
+/* Pages du guide du débutant (guide*.html). S'appuie sur les tokens de
+   base.css ; les pages index/archives/item/apropos définissent leurs propres
+   styles en ligne, ici tout est mutualisé entre les 4 pages du guide. */
+
+a { color: var(--accent); }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border);
+  padding: 18px 32px;
+}
+@media (max-width: 640px) {
+  header { position: static; padding: 16px 20px; }
+}
+header a.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #cabfe0;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+header a.back:hover { color: var(--text); text-decoration: underline; }
+
+main { max-width: 800px; margin: 0 auto; padding: 32px 32px 60px; }
+@media (max-width: 640px) {
+  main { padding: 24px 20px 48px; }
+}
+
+main h1 {
+  font-family: 'Spectral', serif;
+  font-size: 1.8rem;
+  margin: 0 0 14px;
+  color: var(--text);
+}
+main h2 {
+  font-family: 'Spectral', serif;
+  font-size: 1.35rem;
+  color: var(--text);
+  margin: 44px 0 14px;
+  padding-top: 8px;
+  scroll-margin-top: 80px;
+}
+main h3 {
+  font-size: 1rem;
+  color: var(--text);
+  margin: 26px 0 8px;
+}
+main p, main li { line-height: 1.7; color: var(--text-dim); }
+main p { margin: 0 0 14px; }
+main strong { color: var(--text); }
+main ul, main ol { margin: 0 0 16px; padding-left: 22px; }
+main li { margin-bottom: 6px; }
+main code {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 0.85em;
+  color: var(--text);
+}
+.lede { font-size: 1.02rem; color: var(--text) !important; }
+
+/* Navigation entre les pages du guide */
+.guide-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 26px;
+}
+.guide-nav a {
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 14px;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+.guide-nav a:hover { color: var(--text); border-color: var(--accent); }
+.guide-nav a[aria-current="page"] {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: #cabfe0;
+}
+
+/* Sommaire de page */
+.toc {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin: 0 0 8px;
+  background: var(--bg-elevated);
+}
+.toc strong {
+  display: block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+.toc ol { margin: 0; padding-left: 20px; }
+.toc li { margin-bottom: 3px; }
+.toc a { text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+
+/* Encadrés */
+.callout {
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin: 0 0 20px;
+}
+.callout p, .callout li { color: var(--text); font-size: 0.92rem; line-height: 1.6; }
+.callout p:last-child, .callout ul:last-child { margin-bottom: 0; }
+.callout a { color: #cabfe0; font-weight: 600; }
+.callout.warn {
+  background: var(--type-scenario-soft);
+  border-color: var(--seal);
+}
+.callout.warn a { color: var(--type-scenario-text); }
+.callout .t {
+  display: block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  color: #cabfe0;
+  margin-bottom: 4px;
+}
+.callout.warn .t { color: var(--type-scenario-text); }
+
+/* Tableaux */
+.table-wrap { overflow-x: auto; margin: 0 0 22px; border: 1px solid var(--border); border-radius: 8px; }
+table.cmp { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 0.88rem; }
+table.cmp th, table.cmp td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  line-height: 1.55;
+  color: var(--text-dim);
+}
+table.cmp th {
+  background: var(--bg-elevated);
+  color: var(--text);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+table.cmp tr:last-child td { border-bottom: none; }
+table.cmp td:first-child { color: var(--text); font-weight: 600; min-width: 120px; }
+
+/* Schémas */
+figure.diagram {
+  margin: 0 0 24px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card);
+  padding: 16px;
+}
+figure.diagram svg { display: block; width: 100%; height: auto; max-width: 560px; margin: 0 auto; }
+figure.diagram figcaption {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  line-height: 1.55;
+  margin-top: 10px;
+  text-align: center;
+}
+.sv-art   { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 1.5; }
+.sv-art-s { fill: #5b4d78; stroke: none; }
+.sv-bleed { fill: rgba(179,116,63,0.22); stroke: var(--seal); stroke-width: 1.5; stroke-dasharray: 5 3; }
+.sv-trim  { fill: none; stroke: var(--text); stroke-width: 2; }
+.sv-safe  { fill: none; stroke: var(--type-investigateurs); stroke-width: 1.5; stroke-dasharray: 4 3; }
+.sv-paper { fill: #e7e6e3; }
+.sv-cut   { fill: none; stroke: var(--text); stroke-width: 2; stroke-dasharray: 6 3; }
+.sv-txt   { fill: var(--text); font-family: 'Work Sans', sans-serif; font-size: 12px; }
+.sv-dim   { fill: var(--text-dim); font-family: 'Work Sans', sans-serif; font-size: 11px; }
+.sv-line  { stroke: var(--text-dim); stroke-width: 1; fill: none; }
+
+/* Cartes de la page d'accueil du guide */
+.hub {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 14px;
+  margin: 26px 0 30px;
+}
+.hub a {
+  display: block;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--accent);
+  border-radius: 8px;
+  padding: 18px 18px 16px;
+  background: var(--card);
+  transition: border-color 0.15s, transform 0.15s;
+}
+.hub a:hover { border-color: var(--accent); transform: translateY(-2px); }
+.hub a.c-play { border-top-color: var(--type-scenario); }
+.hub a.c-print { border-top-color: var(--type-investigateurs); }
+.hub a.c-faq { border-top-color: var(--type-autre); }
+.hub .n {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-dim);
+}
+.hub strong {
+  display: block;
+  font-family: 'Spectral', serif;
+  font-size: 1.15rem;
+  color: var(--text);
+  margin: 4px 0 8px;
+}
+.hub p { font-size: 0.86rem; line-height: 1.55; margin: 0; }
+
+/* Glossaire */
+dl.glossaire { margin: 0 0 20px; }
+dl.glossaire dt {
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 18px;
+  scroll-margin-top: 80px;
+}
+dl.glossaire dd { margin: 4px 0 0; color: var(--text-dim); line-height: 1.65; }
+
+/* FAQ */
+details.faq {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: var(--card);
+}
+details.faq summary {
+  cursor: pointer;
+  padding: 13px 16px;
+  font-weight: 600;
+  color: var(--text);
+  font-size: 0.95rem;
+  list-style-position: inside;
+}
+details.faq[open] summary { border-bottom: 1px solid var(--border); }
+details.faq .a { padding: 12px 16px 2px; }
+
+.page-end {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 46px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.page-end a { text-decoration: none; color: #cabfe0; }
+.page-end a:hover { text-decoration: underline; }
+
+.disclaimer {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin-top: 30px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}

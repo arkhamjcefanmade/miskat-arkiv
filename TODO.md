@@ -32,6 +32,10 @@ Idées et chantiers pas encore planifiés. Rien d'urgent ici.
       des planches et images (MBPrint, Shoggoth Card Printing, etc.), format A4
       vs format carte, papier, fond perdu, recto/verso. Plan de travail détaillé
       (MBPrint en priorité, puis MPC) : [plan_impression_facilitee.md](plan_impression_facilitee.md).
+      Premier jet rédigé (2026-11-21) : [guide.html](guide.html) et
+      `guide-*.html` (fan-made, impression, glossaire/FAQ). Reste à faire : le
+      test à blanc MBPrint/MPC pour lever les encadrés « À valider » de
+      `guide-impression.html`, puis cocher cet item.
 - [ ] **Investiguer MPC Project Helper** : voir si l'outil permet de faciliter
       la préparation/commande d'impression du contenu du catalogue (à
       rapprocher du plan d'impression facilitée ci-dessus).

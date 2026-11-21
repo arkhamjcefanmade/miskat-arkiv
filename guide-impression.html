@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imprimer ses cartes | Les Archives Miskatoniques</title>
+<meta name="description" content="Imprimer du contenu fan-made d'Horreur à Arkham : le Jeu de Cartes : options, fond perdu, zone de sécurité, formats, tutoriels MBPrint et MPC, finitions et dépannage.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Spectral:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/guide.css">
+</head>
+<body>
+
+<header>
+  <a class="back" href="./">← Retour aux Archives Miskatoniques</a>
+</header>
+
+<main>
+  <h1>Imprimer ses cartes</h1>
+
+  <nav class="guide-nav" aria-label="Pages du guide">
+    <a href="guide.html">Présentation</a>
+    <a href="guide-fanmade.html">Le fan-made et comment y jouer</a>
+    <a href="guide-impression.html" aria-current="page">Imprimer ses cartes</a>
+    <a href="guide-glossaire.html">Glossaire, FAQ et auteurs</a>
+  </nav>
+
+  <p class="lede">
+    Les fichiers du catalogue sont des images et des PDF : à vous d'en faire des cartes.
+    Cette page explique les choix possibles, le vocabulaire technique qui revient dans
+    toutes les spécifications d'imprimeurs (fond perdu, zone de sécurité…), et comment
+    utiliser nos fichiers pas à pas.
+  </p>
+
+  <div class="callout">
+    <p>
+      <strong>Notre principe :</strong> nous facilitons la préparation des fichiers, mais
+      nous ne passons jamais commande à votre place. L'achat, le choix du papier et
+      la quantité restent entièrement votre décision.
+    </p>
+  </div>
+
+  <div class="toc">
+    <strong>Sur cette page</strong>
+    <ol start="5">
+      <li><a href="#options">Les options d'impression</a></li>
+      <li><a href="#vocabulaire">Le vocabulaire technique, en schémas</a></li>
+      <li><a href="#fichiers">Comprendre nos fichiers</a></li>
+      <li><a href="#tutos">Tutoriels pas à pas</a></li>
+      <li><a href="#finitions">Finitions et matériel</a></li>
+      <li><a href="#qualite">Contrôle qualité et problèmes fréquents</a></li>
+    </ol>
+  </div>
+
+  <!-- 5 -->
+  <h2 id="options">5. Les options d'impression</h2>
+  <p>Quatre grandes voies, de la plus simple à la plus proche d'une vraie carte :</p>
+  <div class="table-wrap">
+    <table class="cmp">
+      <thead>
+        <tr><th>Option</th><th>Principe</th><th>Fichier à utiliser</th><th>À savoir</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Chez vous (A4)</td>
+          <td>Impression de la planche sur votre imprimante, découpe à la main, cartes glissées dans des sleeves.</td>
+          <td>Planche A4 (sans ou avec fond perdu)</td>
+          <td>Immédiat, sans commande. Le toucher et la précision de découpe dépendent de votre matériel.</td>
+        </tr>
+        <tr>
+          <td>MBPrint</td>
+          <td>Imprimeur polonais spécialisé dans les jeux de société. Son <a href="https://generator.mbprint.pl/?lang=en" target="_blank" rel="noopener">générateur en ligne</a> produit le PDF aux bonnes spécifications à partir d'images.</td>
+          <td>Zip d'images avec fond perdu, ou PDF « MBPrint » de la fiche</td>
+          <td>Voie que nous recommandons en premier en Europe. Voir le tutoriel ci-dessous.</td>
+        </tr>
+        <tr>
+          <td>MakePlayingCards (MPC)</td>
+          <td>Imprimeur américain très utilisé par la communauté. L'extension de navigateur « MPC Project Helper » remplit le configurateur à partir d'images ou d'un fichier projet.</td>
+          <td>Images avec fond perdu, nommées selon la convention de l'extension</td>
+          <td>Passe par un compte et une extension Chrome. Limite de 612 cartes par projet pour le format Arkham.</td>
+        </tr>
+        <tr>
+          <td>Autres services</td>
+          <td>D'autres imprimeurs ou boutiques de cartes personnalisées existent.</td>
+          <td>Voir leurs spécifications</td>
+          <td>Les notions de la section suivante s'appliquent partout. Les tarifs et les délais changent trop souvent pour que nous les figions ici : comparez avec votre propre panier.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 6 -->
+  <h2 id="vocabulaire">6. Le vocabulaire technique, en schémas</h2>
+  <p>
+    Toutes les spécifications d'imprimeurs reposent sur les mêmes quelques notions.
+    Les avoir en tête évite l'essentiel des déconvenues.
+  </p>
+
+  <h3>Fond perdu, trait de coupe et zone de sécurité</h3>
+  <p>
+    Une carte n'est pas imprimée à sa taille finale : l'imprimeur la découpe dans une
+    feuille plus grande, avec une tolérance de quelques dixièmes de millimètre.
+    D'où trois zones concentriques :
+  </p>
+
+  <figure class="diagram">
+    <svg viewBox="0 0 560 340" role="img" aria-labelledby="t1 d1">
+      <title id="t1">Fond perdu, trait de coupe et zone de sécurité</title>
+      <desc id="d1">Une carte vue de face avec, de l'extérieur vers l'intérieur : le fond perdu, le trait de coupe et la zone de sécurité.</desc>
+      <rect class="sv-bleed" x="40" y="20" width="200" height="290"/>
+      <rect class="sv-art" x="58" y="38" width="164" height="254" style="stroke:none"/>
+      <rect class="sv-trim" x="58" y="38" width="164" height="254"/>
+      <rect class="sv-safe" x="76" y="56" width="128" height="218"/>
+      <text class="sv-dim" x="140" y="158" text-anchor="middle">Texte et éléments</text>
+      <text class="sv-dim" x="140" y="174" text-anchor="middle">importants ici</text>
+
+      <line class="sv-line" x1="231" y1="90" x2="290" y2="90"/>
+      <text class="sv-txt" x="300" y="86" font-weight="600">Fond perdu (bleed)</text>
+      <text class="sv-dim" x="300" y="102">Image prolongée au-delà du bord,</text>
+      <text class="sv-dim" x="300" y="116">jetée à la coupe (≈ 3 mm)</text>
+
+      <line class="sv-line" x1="222" y1="170" x2="290" y2="170"/>
+      <text class="sv-txt" x="300" y="166" font-weight="600">Trait de coupe</text>
+      <text class="sv-dim" x="300" y="182">Bord final de la carte</text>
+      <text class="sv-dim" x="300" y="196">63,5 × 88,9 mm</text>
+
+      <line class="sv-line" x1="204" y1="250" x2="290" y2="250"/>
+      <text class="sv-txt" x="300" y="246" font-weight="600">Zone de sécurité</text>
+      <text class="sv-dim" x="300" y="262">Rien d'important au-delà : ≈ 4 mm</text>
+      <text class="sv-dim" x="300" y="276">à l'intérieur du bord (MBPrint)</text>
+    </svg>
+    <figcaption>Schéma non à l'échelle : les marges sont agrandies pour la lisibilité.</figcaption>
+  </figure>
+
+  <ul>
+    <li>
+      <strong>Fond perdu (bleed)</strong> : la partie de l'image qui dépasse du bord final. Elle
+      est coupée et jetée, mais elle garantit que le décor va jusqu'au bord même si la
+      coupe n'est pas parfaitement centrée.
+    </li>
+    <li>
+      <strong>Trait de coupe</strong> : la ligne où l'imprimeur coupe. C'est la taille réelle
+      de la carte finie.
+    </li>
+    <li>
+      <strong>Zone de sécurité</strong> : la marge intérieure où l'on garde texte, symboles
+      et visages. Ce qui en sort risque d'être rogné, ou de paraître collé au bord.
+    </li>
+  </ul>
+
+  <h3>À quoi sert le fond perdu ?</h3>
+  <figure class="diagram">
+    <svg viewBox="0 0 560 250" role="img" aria-labelledby="t2 d2">
+      <title id="t2">Effet d'une coupe décalée avec et sans fond perdu</title>
+      <desc id="d2">À gauche, sans fond perdu, une coupe décalée laisse un liseré blanc sur deux côtés. À droite, avec fond perdu, l'image remplit toute la carte malgré le même décalage.</desc>
+      <defs>
+        <clipPath id="cutA"><rect x="48" y="48" width="140" height="150"/></clipPath>
+        <clipPath id="cutB"><rect x="368" y="48" width="140" height="150"/></clipPath>
+      </defs>
+
+      <!-- Sans fond perdu -->
+      <rect class="sv-paper" x="48" y="48" width="140" height="150"/>
+      <rect class="sv-art-s" x="40" y="40" width="140" height="150" clip-path="url(#cutA)"/>
+      <rect class="sv-cut" x="48" y="48" width="140" height="150"/>
+      <text class="sv-txt" x="118" y="222" text-anchor="middle" font-weight="600">Sans fond perdu</text>
+      <text class="sv-dim" x="118" y="238" text-anchor="middle">liseré blanc sur deux bords</text>
+
+      <!-- Avec fond perdu -->
+      <rect class="sv-bleed" x="350" y="30" width="160" height="170"/>
+      <rect class="sv-art-s" x="350" y="30" width="160" height="170" clip-path="url(#cutB)"/>
+      <rect class="sv-cut" x="368" y="48" width="140" height="150"/>
+      <text class="sv-txt" x="438" y="222" text-anchor="middle" font-weight="600">Avec fond perdu</text>
+      <text class="sv-dim" x="438" y="238" text-anchor="middle">l'image va jusqu'au bord</text>
+    </svg>
+    <figcaption>Pointillés : la coupe, décalée volontairement de quelques pixels dans les deux cas.</figcaption>
+  </figure>
+
+  <h3>Format, résolution, couleurs</h3>
+  <ul>
+    <li><strong>Format d'une carte du jeu</strong> : 63,5 × 88,9 mm (2,5 × 3,5 pouces).</li>
+    <li>
+      <strong>Résolution</strong> : 300 dpi (points par pouce). À cette résolution, une carte
+      finie fait 750 × 1050 pixels. Une image plus petite sera floue à l'impression.
+    </li>
+    <li>
+      <strong>Couleurs</strong> : un écran affiche en RVB (rouge, vert, bleu) ; une imprimerie
+      travaille en CMJN (cyan, magenta, jaune, noir). Certains imprimeurs, dont MBPrint,
+      préfèrent du CMJN (profil Coated Fogra 39) et convertissent automatiquement un
+      fichier RVB : les couleurs peuvent alors dériver, surtout les tons très saturés.
+    </li>
+    <li>
+      <strong>Traits de coupe (repères)</strong> : de petits repères imprimés dans les coins.
+      MBPrint n'en veut pas dans le fichier envoyé.
+    </li>
+  </ul>
+
+  <h3>Ce que demandent les imprimeurs</h3>
+  <div class="table-wrap">
+    <table class="cmp">
+      <thead>
+        <tr><th>Fichier / imprimeur</th><th>Taille en pixels</th><th>Taille en mm</th><th>Fond perdu</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Nos images sans fond perdu</td><td>750 × 1050</td><td>63,5 × 88,9</td><td>aucun</td></tr>
+        <tr><td>Nos images avec fond perdu (gabarit « Poker – 3.2 marge »)</td><td>≈ 825 × 1125</td><td>≈ 69,9 × 95,3</td><td>3,2 mm par bord</td></tr>
+        <tr><td>MBPrint (PDF à préparer soi-même)</td><td>300 dpi</td><td>fini 63 × 88, fichier 69 × 94</td><td>3 mm par bord, marge de sécurité 4 mm</td></tr>
+        <tr><td>MPC (minimum accepté)</td><td>822 × 1122</td><td>≈ 69,6 × 95</td><td>≈ 3 mm par bord</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    Spécifications relevées en septembre 2026 sur les sites des imprimeurs : elles peuvent
+    évoluer, vérifiez-les avant de commander. Nos images avec fond perdu dépassent
+    le minimum de MPC et sont proches de ce qu'attend MBPrint.
+  </p>
+
+  <!-- 7 -->
+  <h2 id="fichiers">7. Comprendre nos fichiers</h2>
+
+  <h3>Quel fichier pour quelle méthode ?</h3>
+  <div class="table-wrap">
+    <table class="cmp">
+      <thead><tr><th>Méthode</th><th>Fichiers à télécharger</th></tr></thead>
+      <tbody>
+        <tr><td>Chez vous</td><td>Planche d'impression A4. Une planche « sans fond perdu » a des écarts entre les cartes (à découper sur les marges) ; une planche « avec fond perdu » n'a pas d'écart entre les cartes.</td></tr>
+        <tr><td>MBPrint</td><td>PDF « MBPrint » (une carte par page) s'il existe, sinon le zip « Cartes (images) » avec fond perdu.</td></tr>
+        <tr><td>MPC</td><td>Zip « Cartes (images) » avec fond perdu, à renommer selon la convention de l'extension (voir plus bas).</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Comment savoir si mes images ont un fond perdu ?</h3>
+  <p>
+    Le nom du dossier ne suffit pas toujours : mesurez une image. À 300 dpi, une carte
+    portrait de <strong>750 × 1050 px</strong> n'a pas de fond perdu ; une carte
+    de <strong>≈ 825 × 1125 px</strong> en a 3,2 mm par bord. Quelques créations utilisent
+    d'autres marges (par exemple 798 × 1111 px, soit ≈ 2 mm par bord) :
+    comparez la taille réelle avant de supposer.
+  </p>
+
+  <h3>Recto, verso, dos</h3>
+  <ul>
+    <li>Les images portent un nom de la forme <code>NN - Nom de la carte-Recto</code> et <code>NN - Nom de la carte-Verso</code>.</li>
+    <li>
+      Certaines cartes n'ont qu'un recto (soutiens, faiblesses, cartes rencontre) : elles
+      reçoivent le <strong>dos commun</strong> du type correspondant, joueur ou rencontre.
+      C'est un point à contrôler avant impression : une faiblesse de scénario avec le
+      dos joueur, ou l'inverse, se voit tout de suite dans la pile.
+    </li>
+    <li>Certaines cartes existent en plusieurs exemplaires : un fichier texte du type « Nombres de cartes à faire » les indique dans le zip.</li>
+  </ul>
+
+  <h3>Cartes paysage</h3>
+  <p>
+    Actes, agendas et cartes investigateur sont des cartes paysage. Pour l'extension MPC,
+    elles sont enregistrées <strong>à la verticale</strong> dans le fichier : le texte du recto
+    se lit du bas vers le haut, celui du verso du haut vers le bas, de sorte qu'une fois
+    recto et verso côte à côte, le bas des deux se rejoigne au centre.
+  </p>
+
+  <!-- 8 -->
+  <h2 id="tutos">8. Tutoriels pas à pas</h2>
+
+  <h3>A. Imprimer chez vous</h3>
+  <ol>
+    <li>Téléchargez la <strong>planche d'impression</strong> de la fiche.</li>
+    <li>
+      Imprimez à <strong>100 % / taille réelle</strong>. Désactivez « Ajuster à la page » :
+      c'est la cause numéro un de cartes trop petites.
+    </li>
+    <li>
+      Pour le recto verso, imprimez d'abord <strong>une seule feuille</strong>, retournez-la, et
+      vérifiez par transparence que le verso tombe bien derrière le recto avant de lancer
+      le reste.
+    </li>
+    <li>Découpez au massicot ou au cutter et à la règle métallique, en suivant les repères de la planche.</li>
+    <li>Glissez chaque carte dans une sleeve (voir <a href="#finitions">Finitions</a>).</li>
+  </ol>
+
+  <h3>B. Commander chez MBPrint</h3>
+  <div class="callout warn">
+    <span class="t">À valider</span>
+    <p>
+      Cette procédure est établie d'après la documentation de l'imprimeur et la description
+      de son générateur (consultées en septembre 2026). Nous n'avons pas encore vérifié
+      chaque étape de bout en bout avec nos fichiers : les menus ou les libellés peuvent
+      différer légèrement, et nous vous conseillons de faire une petite commande d'essai.
+    </p>
+  </div>
+  <ol>
+    <li>
+      Sur la fiche, téléchargez le <strong>PDF « MBPrint »</strong> s'il existe. Si c'est le cas,
+      passez directement à l'étape 5. Sinon, téléchargez le zip « Cartes (images) »
+      avec fond perdu et décompressez-le.
+    </li>
+    <li>
+      Ouvrez le <a href="https://generator.mbprint.pl/?lang=en" target="_blank" rel="noopener">générateur de PDF MB PRINT</a>
+      et déposez vos images (PNG, JPG, TIFF, WebP ou BMP).
+    </li>
+    <li>
+      Choisissez le <strong>format de carte</strong> : le gabarit 63,5 × 89 mm est le plus proche
+      de nos cartes (63,5 × 88,9 mm).
+    </li>
+    <li>
+      Choisissez la <strong>méthode de fond perdu</strong> :
+      <em>« Files include bleeds »</em> si vos images en ont déjà (zip « avec fond perdu »), ou
+      <em>« Files have no bleed – generate »</em> pour des images sans fond perdu (le
+      générateur étire le dernier pixel ou crée un effet miroir). Définissez un dos par
+      défaut pour les cartes qui n'ont pas de dos propre.
+    </li>
+    <li>Téléchargez le PDF produit et <strong>relisez-le</strong> : aucune carte coupée, recto et verso en face, bon dos au bon endroit.</li>
+    <li>
+      Envoyez ce PDF sur le site de <a href="https://mbprint.pl/en/" target="_blank" rel="noopener">MB PRINT</a>,
+      choisissez le papier et la quantité, puis validez votre commande vous-même.
+    </li>
+  </ol>
+  <p>
+    Rappel des spécifications de MBPrint si vous préparez le PDF à la main : un PDF par
+    format de carte, 300 dpi, CMJN de préférence, fond perdu de 3 mm, marge de sécurité de
+    4 mm, texte vectorisé, calques aplatis et <strong>pas de traits de coupe</strong>.
+  </p>
+
+  <h3>C. Commander chez MakePlayingCards avec MPC Project Helper</h3>
+  <div class="callout warn">
+    <span class="t">À valider</span>
+    <p>
+      Même réserve que pour MBPrint. De plus, <strong>nos images ne suivent pas encore
+      la convention de nommage de l'extension</strong> et doivent être renommées avant import.
+    </p>
+  </div>
+  <ol>
+    <li>
+      Installez l'extension Chrome <strong>MPC Project Helper</strong> (documentation sur
+      <a href="https://mpc.north101.co.uk/help" target="_blank" rel="noopener">mpc.north101.co.uk/help</a>).
+      Ne la confondez pas avec « MPC Autofill », un autre outil.
+    </li>
+    <li>
+      Deux manières de procéder : charger un <strong>fichier projet <code>.json</code></strong> déjà
+      préparé (l'étape d'upload est alors faite, il reste à choisir papier et quantité), ou
+      <strong>créer un projet depuis vos images</strong>.
+    </li>
+    <li>
+      Pour créer un projet, nommez les images ainsi : <code>001-nom-a.png</code> (recto) et
+      <code>001-nom-b.png</code> (verso). Le préfixe numérique donne l'ordre, <code>-a</code> / <code>-b</code>
+      (ou <code>-front</code> / <code>-back</code>) apparie recto et verso.
+    </li>
+    <li>
+      Un dos commun s'appelle <code>back.png</code> : il s'applique à tout recto sans dos identifié.
+      Pour plusieurs exemplaires, ajoutez <code>-xN</code> avant le suffixe, par exemple
+      <code>002-carte-x2-a.png</code>.
+    </li>
+    <li>
+      Respectez la taille minimale : <strong>822 × 1122 px</strong> à 300 dpi. Un projet est
+      limité à <strong>612 cartes</strong> au format Arkham ; au-delà, l'extension scinde en
+      plusieurs commandes.
+    </li>
+    <li>Terminez la commande depuis le configurateur MPC.</li>
+  </ol>
+  <p>
+    Si un projet <code>.json</code> est rechargé depuis celui d'un autre utilisateur, il arrive
+    que l'image en cache de MPC soit capricieuse : demandez à l'auteur du fichier de
+    « rafraîchir » son projet.
+  </p>
+
+  <!-- 9 -->
+  <h2 id="finitions">9. Finitions et matériel</h2>
+  <ul>
+    <li>
+      <strong>Papier et épaisseur</strong> : les cartes de jeu sont en général autour de
+      300 g/m². Comparez avec une carte officielle : une carte plus fine se plie et se voit
+      dans la pile.
+    </li>
+    <li>
+      <strong>Finition</strong> : mate, brillante ou texturée ; le pelliculage protège mais
+      change le toucher. Aucun choix n'est « le bon » : l'idéal est de se rapprocher de vos
+      cartes officielles pour qu'une pile mixte reste homogène.
+    </li>
+    <li><strong>Coins arrondis</strong> : les cartes officielles ont des coins arrondis (rayon de l'ordre de 3 mm). Les imprimeurs les proposent en option ; à la maison, une pince coupe-coins fait l'affaire.</li>
+    <li>
+      <strong>Sleeves</strong> : le format de nos cartes est celui des cartes officielles
+      (63,5 × 88,9 mm) : vos sleeves habituelles conviennent. Des sleeves opaques ou une double
+      sleeve masquent les différences de dos entre cartes officielles et cartes imprimées.
+    </li>
+    <li><strong>Rangement</strong> : imprimez les séparateurs de la fiche pour garder un scénario ou une campagne regroupés dans votre boîte.</li>
+  </ul>
+
+  <!-- 10 -->
+  <h2 id="qualite">10. Contrôle qualité et problèmes fréquents</h2>
+  <p>
+    <strong>Avant une grosse commande, commandez ou imprimez une seule carte</strong> (ou une
+    seule planche) : vous vérifiez format, couleurs, coupe et dos pour une fraction du prix.
+  </p>
+  <div class="table-wrap">
+    <table class="cmp">
+      <thead><tr><th>Symptôme</th><th>Cause probable</th><th>Que faire</th></tr></thead>
+      <tbody>
+        <tr><td>Liseré blanc sur un ou deux bords</td><td>Image sans fond perdu et coupe légèrement décalée.</td><td>Utiliser les images avec fond perdu, ou la méthode « generate » du générateur MBPrint.</td></tr>
+        <tr><td>Texte ou symbole rogné</td><td>Élément dans la marge de sécurité, ou mauvaise taille de fichier.</td><td>Vérifier la taille réelle de l'image ; vérifier que le fichier n'a pas été réduit.</td></tr>
+        <tr><td>Carte trop petite après impression maison</td><td>Option « Ajuster à la page » activée.</td><td>Réimprimer à 100 % / taille réelle.</td></tr>
+        <tr><td>Verso qui ne tombe pas derrière le recto</td><td>Recto-verso mal paramétré (bord long ou court), ou tolérance de l'imprimante.</td><td>Faire un essai sur une feuille, inverser l'option de retournement, ou passer chez un imprimeur.</td></tr>
+        <tr><td>Image floue ou pixellisée</td><td>Résolution inférieure à 300 dpi, ou image agrandie.</td><td>Reprendre les images d'origine ; ne pas redimensionner un fichier trop petit.</td></tr>
+        <tr><td>Couleurs ternes ou différentes de l'écran</td><td>Conversion RVB vers CMJN, ou écran très vif.</td><td>Faire une carte d'essai ; comparer avec une carte officielle plutôt qu'avec l'écran.</td></tr>
+        <tr><td>Mauvais dos sur une carte</td><td>Carte recto seul rangée avec le mauvais dos par défaut.</td><td>Relire le PDF généré avant d'envoyer, carte à carte.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="page-end">
+    <a href="guide-fanmade.html">← Le fan-made et comment y jouer</a>
+    <a href="guide-glossaire.html">Suite : Glossaire, FAQ et auteurs →</a>
+  </div>
+
+  <p class="disclaimer">
+    Ce projet est indépendant. Il n'est ni affilié, ni soutenu, ni approuvé par
+    Fantasy Flight Games, Asmodée, Edge, MB PRINT ou MakePlayingCards. Les noms d'imprimeurs et
+    d'outils sont cités à titre d'information.
+  </p>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-links">
+    <a href="archives.html">Toutes les archives</a>
+    <a href="https://archive.org/details/@arkhamjcefanmade" target="_blank" rel="noopener">Archive.org</a>
+    <a href="https://inexorablefate.com" target="_blank" rel="noopener">Inexorable Fate</a>
+    <a href="https://discord.com/invite/A23rum4" target="_blank" rel="noopener">Discord de la communauté</a>
+    <a href="guide.html">Guide du débutant</a>
+    <a href="apropos.html">À propos</a>
+  </div>
+  <p class="site-footer-note">Fichiers conservés sur <a href="https://archive.org" target="_blank" rel="noopener">Internet Archive</a>, bibliothèque numérique à but non lucratif vouée à la préservation du patrimoine culturel.</p>
+</footer>
+
+</body>
+</html>
